@@ -109,11 +109,21 @@ class Board
     end
 
     def check_board_solved
-        @safe_tiles.all?{|tile| tile.explored}
+        if @safe_tiles.all?{|tile| tile.explored}
+            @bombs.map{|bomb| bomb.explored = true}
+            return true
+        else
+            return false
+        end
     end
 
     def check_if_bomb_hit
-        @bombs.any?{|tile| tile.explored}
+        if @bombs.any?{|tile| tile.explored}
+            @bombs.map{|bomb| bomb.explored = true}
+            return true
+        else
+            return false
+        end
     end
 
 end

@@ -78,7 +78,8 @@ if __FILE__ == $PROGRAM_NAME
     puts "Welcome to Minesweeper!"
     puts "Enter L to load saved game or any other key to start a new game"
     if gets.chomp.upcase == "L"
-        begin 
+        begin
+            system("clear") 
             game = YAML.load(File.read("game.yml"))
         rescue Exception
             puts "No previously saved game.  Starting new game."
