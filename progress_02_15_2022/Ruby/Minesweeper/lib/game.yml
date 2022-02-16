@@ -1,0 +1,660 @@
+--- !ruby/object:Game
+board: !ruby/object:Board
+  size: 9
+  board_vals:
+  - - &11 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &12 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &9 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: false
+    - &13 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &14 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &15 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &16 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &17 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &18 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &19 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &20 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &21 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &22 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &23 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &24 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &25 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &26 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &27 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &28 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &29 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &30 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &31 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &32 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &33 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &3 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: false
+    - &34 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &35 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &36 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &37 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &38 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: true
+    - &7 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &39 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &40 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &41 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &42 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: true
+    - &43 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &44 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &45 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &46 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: true
+    - &6 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &47 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: true
+    - &48 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &1 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &49 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: true
+    - &50 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &10 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: false
+    - &51 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &52 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 3
+      user_flagged: false
+      explored: false
+    - &53 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 3
+      user_flagged: false
+      explored: false
+    - &54 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &55 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &8 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &56 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: true
+    - &57 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &58 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &59 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &2 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &5 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &60 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &61 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &62 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &63 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &64 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &65 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: false
+    - &66 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 2
+      user_flagged: false
+      explored: false
+    - &67 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 3
+      user_flagged: false
+      explored: false
+    - &68 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 3
+      user_flagged: false
+      explored: true
+    - &69 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &70 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &71 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &72 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &73 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  - - &74 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: false
+    - &75 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: false
+    - &4 !ruby/object:Tile
+      bomb: true
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: false
+    - &76 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 1
+      user_flagged: false
+      explored: true
+    - &77 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &78 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &79 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &80 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+    - &81 !ruby/object:Tile
+      bomb: false
+      adjacent_bombs: 0
+      user_flagged: false
+      explored: true
+  bombs: !ruby/object:Set
+    hash:
+      *1: true
+      *2: true
+      *3: true
+      *4: true
+      *5: true
+      *6: true
+      *7: true
+      *8: true
+      *9: true
+      *10: true
+  safe_tiles: !ruby/object:Set
+    hash:
+      *11: true
+      *12: true
+      *13: true
+      *14: true
+      *15: true
+      *16: true
+      *17: true
+      *18: true
+      *19: true
+      *20: true
+      *21: true
+      *22: true
+      *23: true
+      *24: true
+      *25: true
+      *26: true
+      *27: true
+      *28: true
+      *29: true
+      *30: true
+      *31: true
+      *32: true
+      *33: true
+      *34: true
+      *35: true
+      *36: true
+      *37: true
+      *38: true
+      *39: true
+      *40: true
+      *41: true
+      *42: true
+      *43: true
+      *44: true
+      *45: true
+      *46: true
+      *47: true
+      *48: true
+      *49: true
+      *50: true
+      *51: true
+      *52: true
+      *53: true
+      *54: true
+      *55: true
+      *56: true
+      *57: true
+      *58: true
+      *59: true
+      *60: true
+      *61: true
+      *62: true
+      *63: true
+      *64: true
+      *65: true
+      *66: true
+      *67: true
+      *68: true
+      *69: true
+      *70: true
+      *71: true
+      *72: true
+      *73: true
+      *74: true
+      *75: true
+      *76: true
+      *77: true
+      *78: true
+      *79: true
+      *80: true
+      *81: true
+  seen_adjacent_tiles: !ruby/object:Set
+    hash:
+      ? - 6
+        - 6
+      : true
+      ? - 6
+        - 7
+      : true
+      ? - 6
+        - 8
+      : true
+      ? - 5
+        - 7
+      : true
+      ? - 5
+        - 8
+      : true
+      ? - 4
+        - 7
+      : true
+      ? - 4
+        - 8
+      : true
+      ? - 3
+        - 7
+      : true
+      ? - 3
+        - 8
+      : true
+      ? - 2
+        - 7
+      : true
+      ? - 2
+        - 8
+      : true
+      ? - 1
+        - 7
+      : true
+      ? - 1
+        - 8
+      : true
+      ? - 0
+        - 7
+      : true
+      ? - 0
+        - 6
+      : true
+      ? - 0
+        - 5
+      : true
+      ? - 0
+        - 4
+      : true
+      ? - 0
+        - 3
+      : true
+      ? - 1
+        - 3
+      : true
+      ? - 1
+        - 4
+      : true
+      ? - 1
+        - 5
+      : true
+      ? - 2
+        - 3
+      : true
+      ? - 2
+        - 4
+      : true
+      ? - 2
+        - 5
+      : true
+      ? - 1
+        - 6
+      : true
+      ? - 0
+        - 8
+      : true
+      ? - 7
+        - 7
+      : true
+      ? - 7
+        - 6
+      : true
+      ? - 6
+        - 5
+      : true
+      ? - 7
+        - 5
+      : true
+      ? - 6
+        - 4
+      : true
+      ? - 7
+        - 4
+      : true
+      ? - 8
+        - 4
+      : true
+      ? - 7
+        - 3
+      : true
+      ? - 8
+        - 3
+      : true
+      ? - 8
+        - 5
+      : true
+      ? - 8
+        - 6
+      : true
+      ? - 8
+        - 7
+      : true
+      ? - 7
+        - 8
+      : true
+      ? - 8
+        - 8
+      : true
+      ? - 0
+        - 1
+      : true
+      ? - 1
+        - 0
+      : true
+      ? - 0
+        - 0
+      : true
+      ? - 1
+        - 1
+      : true
+      ? - 2
+        - 0
+      : true
+      ? - 2
+        - 1
+      : true
+      ? - 1
+        - 2
+      : true
+      ? - 2
+        - 2
+      : true
+      ? - 3
+        - 0
+      : true
+      ? - 3
+        - 1
+      : true
+      ? - 3
+        - 2
+      : true
+      ? - 4
+        - 0
+      : true
+      ? - 4
+        - 1
+      : true
+      ? - 4
+        - 2
+      : true
+bomb_hit: false
+solved: false
